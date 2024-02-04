@@ -9,9 +9,9 @@
     @include('web.includes.header')
 
     
-    <div class="hero inner-page" style="background-image: url('assets/images/hero_1_a.jpg');">
+    <div class="hero inner-page" style="background-image: url('{{ asset('assets/images/hero_1_a.jpg') }}');">
 
-    {{-- <div class="hero inner-page"  src="{{ asset('assets/images/hero_1_a.jpg') }}";> --}}
+    {{-- <div class="hero inner-page"  url"{{ asset('assets/images/hero_1_a.jpg') }}";> --}}
         
         <div class="container">
           <div class="row align-items-end ">
