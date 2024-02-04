@@ -49,7 +49,7 @@ Auth::routes(['verify'=>true]);
 Route::get('cars', [CarController::class, 'index'])->name('cars')->middleware('verified');
 Route::get('addCar', [CarController::class, 'create'])->name('addCar')->middleware('verified');
 Route::post('carsStore', [CarController::class, 'store'])->name('carsStore')->middleware('verified');
-Route::get('editcar/{id}', [CarController::class, 'edit']);->middleware('verified');
+Route::get('editcar/{id}', [CarController::class, 'edit'])->middleware('verified');
  Route::put("updateCar/{id}", 
  [CarController::class,'update'])->name('updateCar')->middleware('verified');
  Route::get('deleteCar/{id}', [CarController::class, 'delete'])->middleware('verified'); //forsedelete
